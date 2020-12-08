@@ -95,15 +95,39 @@
 #     else:
 #         print("-----")
 
-for rows in range(5):
-    if rows % 2 == 0:
-        for columns in range(1, 6):
-            if columns % 2 == 1:
-                if columns != 5:
-                    print(" ", end="")
-                else:
-                    print(" ")
-            else:
-                print("|", end="")
+# for rows in range(5):
+#     if rows % 2 == 0:
+#         for columns in range(1, 6):
+#             if columns % 2 == 1:
+#                 if columns != 5:
+#                     print(" ", end="")
+#                 else:
+#                     print(" ")
+#             else:
+#                 print("|", end="")
+#     else:
+#         print("-----")
+
+# Sets
+country_list = []
+
+for i in range(5):
+    country = input("Please Enter Your Country:")
+    country_list.append(country)
+
+# set_country = set(country_list)
+#
+# print(country_list)
+# print(set_country)
+
+# Dictionary
+country_directory = {}
+
+for country in country_list:
+    if country in country_directory:
+        country_directory[country] += 1
     else:
-        print("-----")
+        country_directory[country] = 1
+
+print(country_directory)
+
