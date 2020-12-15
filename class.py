@@ -109,11 +109,11 @@
 #         print("-----")
 
 # Sets
-country_list = []
+# country_list = []
 
-for i in range(5):
-    country = input("Please Enter Your Country:")
-    country_list.append(country)
+# for i in range(5):
+#     country = input("Please Enter Your Country:")
+#     country_list.append(country)
 
 # set_country = set(country_list)
 #
@@ -121,13 +121,32 @@ for i in range(5):
 # print(set_country)
 
 # Dictionary
-country_directory = {}
+# country_directory = {}
+#
+# for country in country_list:
+#     if country in country_directory:
+#         country_directory[country] += 1
+#     else:
+#         country_directory[country] = 1
+#
+# print(country_directory)
 
-for country in country_list:
-    if country in country_directory:
-        country_directory[country] += 1
+# Book Store
+genre = {'Romance':3, 'Action':1, 'Comedy':2, 'Horror':1}
+
+print("Available:")
+print(genre)
+
+while True:
+    userInput = input("what is your favorite Genre?\n").capitalize()
+    if userInput in genre:
+        genre[userInput] += 1
     else:
-        country_directory[country] = 1
+        genre[userInput] = 1
 
-print(country_directory)
+    print(genre)
+
+
+
+
 
