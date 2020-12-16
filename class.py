@@ -132,21 +132,18 @@
 # print(country_directory)
 
 # Book Store
-genre = {'Romance':3, 'Action':1, 'Comedy':2, 'Horror':1}
-
-print("Available:")
-print(genre)
-
-while True:
-    userInput = input("what is your favorite Genre?\n").capitalize()
-    if userInput in genre:
-        genre[userInput] += 1
-    else:
-        genre[userInput] = 1
-
-    print(genre)
-
-
-
+# genre = {'Romance':3, 'Action':1, 'Comedy':2, 'Horror':1}
+#
+# print("Available:")
+# print(genre)
+#
+# while True:
+#     userInput = input("what is your favorite Genre?\n").capitalize()
+#     if userInput in genre:
+#         genre[userInput] += 1
+#     else:
+#         genre[userInput] = 1
+#
+#     print(genre)
 
 
